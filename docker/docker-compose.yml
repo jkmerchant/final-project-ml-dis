@@ -3,12 +3,12 @@ services:
   final-project-ml-dis:
     build:
       context: ../
-      dockerfile: ./docker/Dockerfile #Dockerfile.gpu
+      dockerfile: ./docker/Dockerfile
       args:
         - username=devel
         - userid=1000
     container_name: final-project-ml-dis
-    image: ageron/final-project-ml-dis:latest #latest-gpu
+    image: final-project-ml-dis:latest
     restart: unless-stopped
     logging:
       driver: json-file
@@ -20,8 +20,3 @@ services:
     volumes:
       - ../:/home/devel/final-project-ml-dis
     command: /opt/conda/envs/homl3/bin/jupyter notebook --ip='0.0.0.0' --port=8888 --no-browser
-    #deploy:
-    #  resources:
-    #    reservations:
-    #      devices:
-    #      - capabilities: [gpu]
