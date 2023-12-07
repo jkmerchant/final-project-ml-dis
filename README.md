@@ -17,6 +17,8 @@ Future Improvements:
 
 URL: https://movie-review-classifier.anvil.app/ (CHECK IT OUT!!)
 
+Blog Post: https://docs.google.com/document/d/1p7m9lq0DmhU0aHJLoW1nzv2Ds1HKBzP8d-lu9IBY3mA/edit?usp=sharing
+
 
 
 
